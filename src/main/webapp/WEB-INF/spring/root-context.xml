@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="superAdminUserValidator" class="org.neu.webtools.validator.SuperAdminUserValidator"></bean>
+	<bean id="customerValidator" class="org.neu.webtools.validator.CustomerValidator"></bean>
+	
+	<bean id="personDao" class="org.neu.webtools.dao.PersonDao" ></bean>
+	<bean id="foodDao" class="org.neu.webtools.dao.FoodDao" ></bean>
+	<bean id="customerDao" class="org.neu.webtools.dao.CustomerDao" ></bean>
+	
+</beans>
